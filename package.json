@@ -1,0 +1,29 @@
+{
+  "name": "furigana-injector",
+  "version": "1.0.0",
+  "description": "Chrome extension for Japanese Furigana",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.38",
+    "buffer": "^6.0.3",
+    "copy-webpack-plugin": "^11.x",
+    "crypto-browserify": "^3.12.1",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "ts-loader": "^9.x",
+    "typescript": "^5.x",
+    "vm-browserify": "^1.1.2",
+    "webpack": "^5.x",
+    "webpack-cli": "^5.x"
+  },
+  "dependencies": {
+    "kuroshiro": "^1.x",
+    "kuroshiro-analyzer-kuromoji": "^1.x"
+  }
+}

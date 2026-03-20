@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Furigana Injector",
+  "version": "1.0.0",
+  "description": "Automatically adds furigana to Japanese Kanji on web pages.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["lib/dict/*.gz"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

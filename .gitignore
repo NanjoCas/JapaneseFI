@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+*.tgz
+*.crx
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing & Benchmarking
+benchmark-results-*.json
+stress-test.html
+test.sh
+benchmark.js
+STRESS_TEST.md
+TESTING_GUIDE.md
+PERFORMANCE_REPORT.md
+
+# Build scripts (optional)
+package-extension.sh
+package-clean.sh
+
+# Release packages
+releases/
+
+# Temporary files
+*.tmp
+.cache/

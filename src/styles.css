@@ -1,0 +1,61 @@
+/* 日本語フリガナ拡張 - グローバルスタイル */
+
+ruby {
+  /* ruby 容器样式 */
+  line-height: 1.8;
+  font-feature-settings: "ruby" 1;
+}
+
+ruby rt {
+  /* 注音文字样式 */
+  font-size: 0.55em !important;
+  color: #666 !important;
+  font-weight: normal !important;
+  letter-spacing: -0.1em;
+  line-height: 1.2;
+}
+
+ruby rb {
+  /* 原文字样式 */
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+/* 为包含 ruby 标签的段落增加行距 */
+p:has(ruby) {
+  line-height: 1.9 !important;
+}
+
+h1:has(ruby),
+h2:has(ruby),
+h3:has(ruby),
+h4:has(ruby),
+h5:has(ruby),
+h6:has(ruby) {
+  line-height: 1.85 !important;
+}
+
+article:has(ruby) {
+  line-height: 1.85 !important;
+}
+
+/* 优化长文本的可读性 */
+div[role="article"]:has(ruby) {
+  line-height: 1.9 !important;
+}
+
+/* 避免在某些特殊元素中出现注音 */
+button ruby rt,
+input ruby rt,
+label ruby rt {
+  font-size: 0.65em !important;
+}
+
+/* 确保注音不会破坏按钮等紧凑元素 */
+button ruby,
+input ruby,
+label ruby {
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
