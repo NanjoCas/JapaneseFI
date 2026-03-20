@@ -1,17 +1,14 @@
 # Furigana Injector
 
-一个强大的 Chrome 扩展程序，自动为网页上的日语文本添加**注音假名（振り仮名）**。
+一个 Chrome 扩展程序，自动为网页上的日语文本添加**注音假名（振り仮名）**。
 
-![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available-4285F4)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 ## ✨ 功能特性
 
 - 🇯🇵 **自动注音转换** - 使用 Kuroshiro + Kuromoji 进行高精度日语形态分析
 - 🌐 **白名单管理** - 预配置 44+ 常用日语网站，支持自定义添加/删除
 - ⚡ **高性能处理** - 并行批处理，智能防抖，最小化 CPU 占用
-- 🎨 **美观显示** - 优化的 Ruby 标签渲染，完美兼容各种网页布局
 - 🔄 **动态内容支持** - 实时监控 DOM 变化，自动处理动态加载的文本
 - 💾 **持久化存储** - Chrome Storage API 本地保存用户偏好设置
 - 🚀 **即插即用** - 一键启用/禁用，零配置开箱即用
@@ -137,35 +134,6 @@ JPP/
 └── README.md            # 本文件
 ```
 
-## 📊 性能指标
-
-- **初始化时间**: ~200ms
-- **单页面处理**: 平均 <100ms (MAX_PER_RUN=50)
-- **内存占用**: ~15-20MB (包括词典)
-- **CPU 使用**: 处理时占 <5%, 空闲时接近 0%
-- **防抖延迟**: 500ms (DOMContentLoaded 后处理)
-
-## 🎨 UI 特性
-
-### Popup 界面
-- 📐 尺寸: 360px × 自适应高度
-- 🎯 4 个核心按钮:
-  - **添加到白名单** (紫色) - 启用当前网站
-  - **刷新页面** (紫色) - 重新处理文本
-  - **一键还原** (橙色) - 恢复所有默认配置
-  - **⚙️ 设置** - 打开选项页面
-- ✨ 动画效果:
-  - 滑入/淡入 (300ms 级联延迟)
-  - 悬停放大 (scale 1.05)
-  - 水波纹涟漪 (点击效果)
-  - 闪烁效果 (状态消息)
-
-### 选项页面
-- 📋 白名单管理
-- 🔘 快速操作面板 (4 个快捷操作)
-- 📊 网站状态显示
-- 🎛️ 批量启用/禁用
-
 ## 🔧 开发与调试
 
 ### 环境要求
@@ -173,24 +141,6 @@ JPP/
 - npm 8+
 - Chrome 88+
 
-### 开发命令
-
-```bash
-# 安装依赖
-npm install
-
-# 开发构建（监听模式）
-npm run watch
-
-# 生产构建
-npm run build
-
-# 查看构建大小
-npm run analyze
-
-# 清理构建文件
-npm run clean
-```
 
 ### 调试方法
 
@@ -207,29 +157,6 @@ npm run clean
    - 在 `chrome://extensions/` 中点击刷新按钮
    - 或按 Ctrl+Shift+J 在扩展程序管理器中重新加载
 
-## 📝 日志示例
-
-```
-✓ 内容脚本已注入
-✓ 白名单检查: example.jp (已启用)
-✓ 检测到 245 个处理目标
-⚙️ 处理进度: 50/245 (20%)
-⚙️ 处理进度: 100/245 (40%)
-⚙️ 处理进度: 150/245 (60%)
-⚙️ 处理进度: 200/245 (81%)
-⚙️ 处理进度: 245/245 (100%)
-✓ 全部处理完成！耗时 342ms
-```
-
-## 🐛 故障排除
-
-| 问题 | 解决方案 |
-|------|--------|
-| 扩展程序不工作 | 检查网站是否在白名单中，或手动添加 |
-| 注音显示错误 | 刷新页面或点击 Popup 中的 **刷新页面** 按钮 |
-| 性能缓慢 | 减少启用的网站数量，或清除缓存 |
-| 词典加载失败 | 检查网络连接，确保词典文件完整 |
-| 内存占用过高 | 重启浏览器或禁用不使用的网站 |
 
 ## 📥 Release 下载
 
@@ -277,30 +204,11 @@ npm run clean
 - 💡 **功能建议**: 欢迎在 Issues 中讨论
 - 🔧 **代码贡献**: Fork → 修改 → Pull Request
 
-### 开发流程
-
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
-
-## 📄 许可证
-
-MIT License © 2026 Nanjo Cas
-
-详见 [LICENSE](LICENSE) 文件
-
-## 🙏 致谢
-
-- **Kuroshiro** - 日语处理引擎
-- **Kuromoji** - 日语形态分析器
-- **Chrome Extensions API** - 提供强大的扩展开发能力
 
 ## 📧 联系方式
 
 - **GitHub**: [@NanjoCas](https://github.com/NanjoCas)
-- **Email**: nanjo@example.com
+- **Email**: nanjocassava@outlook.com
 - **问题反馈**: [GitHub Issues](https://github.com/NanjoCas/JapaneseFI/issues)
 
 ---
