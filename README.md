@@ -15,7 +15,7 @@
 
 ## 📥 安装方法
 
-### 方法 1: 直接加载扩展（开发者模式）
+### 直接加载扩展（开发者模式）
 
 1. **下载最新版本**
    - 访问 [Release 页面](https://github.com/NanjoCas/JapaneseFI/releases)
@@ -28,22 +28,6 @@
    - 点击 **加载未打包的扩展程序**
    - 选择解压后的 `dist` 文件夹
    - ✅ 完成！扩展程序已激活
-
-### 方法 2: 从源代码构建
-
-```bash
-# 克隆仓库
-git clone https://github.com/NanjoCas/JapaneseFI.git
-cd JapaneseFI
-
-# 安装依赖
-npm install
-
-# 构建
-npm run build
-
-# 加载 dist 文件夹到 Chrome
-```
 
 ## 🎯 使用方法
 
